@@ -6,7 +6,7 @@
 	<meta name="description" content="">
 	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
 	
-	<title>Progressus - Free business bootstrap template by GetTemplate</title>
+	<title>S&amp;C Electrical</title>
 
 	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
 	
@@ -38,15 +38,7 @@
 				<ul class="nav navbar-nav pull-right">
 					<li class="active"><a href="#">Home</a></li>
 					<li><a href="about.html">About</a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">More Pages <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="sidebar-left.html">Left Sidebar</a></li>
-							<li class="active"><a href="sidebar-right.html">Right Sidebar</a></li>
-						</ul>
-					</li>
 					<li><a href="contact.html">Contact</a></li>
-					<li><a class="btn" href="signin.html">SIGN IN / SIGN UP</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div>
@@ -59,7 +51,7 @@
 			<div class="row">
 				<h1 class="lead">AWESOME, CUSTOMIZABLE, FREE</h1>
 				<p class="tagline">PROGRESSUS: free business bootstrap template by <a href="http://www.gettemplate.com/?utm_source=progressus&amp;utm_medium=template&amp;utm_campaign=progressus">GetTemplate</a></p>
-				<p><a class="btn btn-default btn-lg" role="button">MORE INFO</a> <a class="btn btn-action btn-lg" role="button">DOWNLOAD NOW</a></p>
+				<!--<p><a class="btn btn-default btn-lg" role="button">MORE INFO</a> <a class="btn btn-action btn-lg" role="button">DOWNLOAD NOW</a></p>-->
 			</div>
 		</div>
 	</header>
@@ -222,9 +214,7 @@
 							<p class="simplenav">
 								<a href="#">Home</a> | 
 								<a href="about.html">About</a> |
-								<a href="sidebar-right.html">Sidebar</a> |
-								<a href="contact.html">Contact</a> |
-								<b><a href="signup.html">Sign up</a></b>
+								<a href="contact.html">Contact</a>
 							</p>
 						</div>
 					</div>
@@ -232,7 +222,7 @@
 					<div class="col-md-6 widget">
 						<div class="widget-body">
 							<p class="text-right">
-								Copyright &copy; 2014, Your name. Designed by <a href="http://gettemplate.com/" rel="designer">gettemplate</a> 
+                                Copyright &copy; <span id="js-date"></span>, S&amp;C Electrical. Developed by <a href="http://www.aylessoftware.com" rel="designer">Ayles Software</a>
 							</p>
 						</div>
 					</div>
@@ -244,14 +234,13 @@
 	</footer>	
 		
 
-
-
-
 	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 	<script src="assets/js/headroom.min.js"></script>
 	<script src="assets/js/jQuery.headroom.min.js"></script>
 	<script src="assets/js/template.js"></script>
+	<script>
+        $('#js-date').html((new Date()).getFullYear());
+	</script>
 </body>
 </html>

@@ -38,15 +38,7 @@
 				<ul class="nav navbar-nav pull-right">
 					<li><a href="index.html">Home</a></li>
 					<li class="active"><a href="about.html">About</a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">More Pages <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="sidebar-left.html">Left Sidebar</a></li>
-							<li><a href="sidebar-right.html">Right Sidebar</a></li>
-						</ul>
-					</li>
 					<li><a href="contact.html">Contact</a></li>
-					<li><a class="btn" href="signin.html">SIGN IN / SIGN UP</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div>
@@ -155,9 +147,7 @@
 							<p class="simplenav">
 								<a href="#">Home</a> | 
 								<a href="about.html">About</a> |
-								<a href="sidebar-right.html">Sidebar</a> |
-								<a href="contact.html">Contact</a> |
-								<b><a href="signup.html">Sign up</a></b>
+								<a href="contact.html">Contact</a>
 							</p>
 						</div>
 					</div>
@@ -165,7 +155,7 @@
 					<div class="col-md-6 widget">
 						<div class="widget-body">
 							<p class="text-right">
-								Copyright &copy; 2014, Your name. Designed by <a href="http://gettemplate.com/" rel="designer">gettemplate</a> 
+								Copyright &copy; <span id="js-date"></span>, S&amp;C Electrical. Developed by <a href="http://www.aylessoftware.com" rel="designer">Ayles Software</a>
 							</p>
 						</div>
 					</div>
@@ -173,11 +163,7 @@
 				</div> <!-- /row of widgets -->
 			</div>
 		</div>
-	</footer>	
-		
-
-
-
+	</footer>
 
 	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -185,5 +171,8 @@
 	<script src="assets/js/headroom.min.js"></script>
 	<script src="assets/js/jQuery.headroom.min.js"></script>
 	<script src="assets/js/template.js"></script>
+	<script>
+		$('#js-date').html((new Date()).getFullYear());
+	</script>
 </body>
 </html>
